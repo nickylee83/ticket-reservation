@@ -1,0 +1,67 @@
+/*------------------------------- system's general design -----------------------------------*/
+.bd-placeholder-img {
+	font-size: 1.125rem;
+	text-anchor: middle;
+	-webkit-user-select: none;
+	-moz-user-select: none;
+	-ms-user-select: none;
+	user-select: none;
+}
+
+@media (min-width: 768px) {
+	.bd-placeholder-img-lg {
+		font-size: 3.5rem;
+	}
+}
+/*---------------------------- form ------------------------------------------*/
+input[type= "date"], input[type= "text"], input[type= "email"], input[type= "password"],
+input[type= "number"], .custom-select, textarea[type= "text"] {
+  border-radius: 15px;
+}
+
+button[type= "submit"], button[type= "reset"] {
+	border-radius: 5px;
+	padding: 10px;
+}
+
+/*---------------------------- nav ------------------------------------------*/
+nav {
+	background-color: #6478CA;
+}
+
+.nav-item.active, .dropdown-item.active {
+	color: #EBEDF2;
+	font-weight: bold;
+}
+
+.dropdown-item, .nav-link.dropdown-toggle {
+	color: #D8DEEB;
+}
+
+.nav-link:hover {
+	font-weight: bold;
+	border-bottom: 2px solid #FFFF00;
+}
+
+.navbar-brand:hover {
+	font-weight: bold;
+}
+
+.modal-content:hover {
+	font-weight: normal;
+}
+
+/*---------------------------- footer ------------------------------------------*/
+footer {
+	background-color: #0F2D53;
+	color: #FFFFFF;
+}
+
+footer a:hover {
+	color: #FFFF00;
+	text-decoration: none;
+}
+
+.fb-ic, .tw-ic, .gplus-ic, .li-ic, .ins-ic {
+	color: #FFFFFF;
+}
