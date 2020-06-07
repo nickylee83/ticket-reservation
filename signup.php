@@ -94,7 +94,7 @@
                 <button class="btn btn-success" type= "reset">Reset</button>
               </div>
             <div class= "col">
-              <button class= "btn btn-primary" type = "button"><a style="color: white; text-decoration: none;" href= "login.php">Log in now!</a></button>
+              <button class= "btn btn-primary" type = "button" onclick="location.href = 'login.php';">Log in now!</button>
             </div>
           </div>
           <!-- ****** This was removed for simplicity ******* -->

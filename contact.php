@@ -1,3 +1,14 @@
+<?php
+  session_start();
+  // check if it is a valid login, prevent unauthorised
+  if(!isset($_SESSION['login']))
+    {
+      // not logged in
+      header('Location: login.php');
+      exit();
+    }
+?>
+
 <!DOCTYPE html>
 <!--------------------------------- Contact Us -------------------------------------->
 <html>

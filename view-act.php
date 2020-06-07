@@ -1,7 +1,15 @@
 <?php
   if (session_status() == PHP_SESSION_NONE) {
     session_start();
-  }	
+    if(!isset($_SESSION['login']))
+    {
+      // not logged in
+      header('Location: login.php');
+      exit();
+    }
+  }
+  // check if it is a valid login, prevent unauthorised
+  	
 	
   if(isset($_POST['submit'], $_POST['table'])) {
     $selected_table = $_POST['table'];

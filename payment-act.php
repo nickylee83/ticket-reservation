@@ -1,5 +1,12 @@
 <?php
 	session_start();
+  	// check if it is a valid login, prevent unauthorised
+  	if(!isset($_SESSION['login']))
+    {
+    	// not logged in
+    	header('Location: login.php');
+    	exit();
+    }
 	include ('includes/config.php');
 
 	if(isset($_POST['submit'])){

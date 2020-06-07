@@ -1,4 +1,5 @@
 <?php
+	session_start();
 	include ('includes/config.php');
 
 	if(isset($_POST['submit'])){
@@ -14,7 +15,9 @@
 				while ($row = mysqli_fetch_array($result)) {
 					// verify current password with hashed one								
 					if(password_verify($password,$row["password"])) {
-						header("Location:home.php");						
+						header("Location:home.php");
+						// session variable to confirm login or not
+						$_SESSION['login'] = x;						
 					}
 					else {
 						// show login not successful												

@@ -1,14 +1,12 @@
 <?php
-  /* include ('login-act.php');
-  
-  if(!isset($valid_user));
-  {
-    // not logged in
-    echo "<script>alert(valid_user);</script>";
-    // exit();
-    // echo "<script>document.location.href='login.php'</script>";
-    //exit(); 
-  }*/
+  session_start();
+  // check if it is a valid login, prevent unauthorised
+  if(!isset($_SESSION['login']))
+    {
+      // not logged in
+      header('Location: login.php');
+      exit();
+    }
 ?>
 <!DOCTYPE html>
 <!-- ------------------------------- Home ------------------------------------ -->
@@ -88,6 +86,7 @@
     		<span class="carousel-control-next-icon"></span>
   		</a>
 	</div>
+  
 </body>
 
 <!-- ****** Footer starts here ******* -->
