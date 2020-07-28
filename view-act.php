@@ -113,7 +113,7 @@
         <td><?= $row['gender']; ?></td>
         <td><?= $row['dob']; ?></td>
         <td><?= $row['passport']; ?></td>
-        <td><?= $row['nationality']; ?></td>
+        <td><?= ucwords($row['nationality']); ?></td>
         <td><?= $row['phone']; ?></td>
         <td><?= $row['email']; ?></td>
 
