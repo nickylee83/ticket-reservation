@@ -76,8 +76,9 @@
           <!-- second row, Password -->
           <div class = "form-group row">
             <label for= "password" class="col-sm-4 col-form-label" >Password</label>
-            <div class="col">              
-              <input type="password" class="form-control" placeholder="Password (minimum 8 characters)" name= "password" id= "password" minlength= "8" required>
+            <div class="col">
+		<!-- password must be minimum 8 chars, one upper one lower one digit -->
+              <input type="password" class="form-control" placeholder="Password (minimum 8 characters)" name= "password" id= "password" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" title="Must contain at least one number and one uppercase and lowercase letter, and at least 8 characters" required>
             </div>
           </div>
           <!-- third row, Confirm Password -->
